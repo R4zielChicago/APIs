@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:elevation="5dp"
+                                    android:orientation="vertical"
+                                    android:layout_margin="8dp"
+                                    card_view:cardCornerRadius="5dp"
+                                    card_view:cardMaxElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_movie_thumbnail"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/all_placeholder"/>
+
+            <TextView
+                android:id="@+id/tv_movie_title"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/iv_movie_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_title"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <TextView
+                android:id="@+id/tv_movie_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_movie_thumbnail"
+                android:layout_below="@id/tv_movie_title"
+                android:hint="@string/item_movie_ratinghint"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
